@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'I am awesome sauce!',
+};
+
 export default function Home() {
   return (
     <>

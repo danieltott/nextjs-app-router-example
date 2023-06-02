@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Awesome Mix Vol. 1',
+};
+
 export default function Home() {
   return (
     <>

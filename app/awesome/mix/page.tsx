@@ -1,9 +1,13 @@
+export const metadata = {
+  title: 'Awesome Mixes!',
+};
+
 export default function Home() {
   return (
     <>
       <div className="border-b border-gray-200 pb-5 sm:flex sm:items-center sm:justify-between">
         <h2 className="text-base font-semibold leading-6 text-gray-900">
-          I am awesome sauce!
+          Awesome Mixes!
         </h2>
         <div className="mt-3 flex sm:ml-4 sm:mt-0">
           <span className="text-sm text-gray-500 italic">Awesome Sauce!</span>
