@@ -40,6 +40,9 @@ export default function RootLayout({
                   <Link href="/">Home</Link>
                 </li>
                 <li>
+                  <Link href="/star-wars/people">Star Wars</Link>
+                </li>
+                <li>
                   <Link href="/danger-zone">Error</Link>
                 </li>
                 <li>
