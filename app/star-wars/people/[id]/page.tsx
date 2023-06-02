@@ -1,6 +1,7 @@
-import { type Person, sleep } from '../page';
+import { type Person } from '../../types';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import sleep from '@/util/sleep';
 
 type Props = {
   params: { id: string };

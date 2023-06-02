@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import sleep from '@/util/sleep';
+import { type Person } from '../types';
 
 async function getPeople(): Promise<Person[]> {
   await sleep();
@@ -9,31 +11,6 @@ async function getPeople(): Promise<Person[]> {
 
 export const metadata = {
   title: 'Star Wars People',
-};
-
-export function sleep(ms = 2000) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
-}
-
-export type Person = {
-  name: string;
-  height: string;
-  mass: string;
-  hair_color: string;
-  skin_color: string;
-  eye_color: string;
-  birth_year: string;
-  gender: string;
-  homeworld: string;
-  films: string[];
-  species: string[];
-  vehicles: string[];
-  starships: string[];
-  created: string;
-  edited: string;
-  url: string;
 };
 
 export default async function Page() {
