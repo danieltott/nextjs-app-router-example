@@ -53,10 +53,10 @@ export default function RootLayout({
                       <Link href="/awesome/mix">Mix</Link>
                       <ul>
                         <li>
-                          <Link href="/awesome/mix/vol-1">Volume 1</Link>
+                          <Link href="/awesome/mix/vol/1">Volume 1</Link>
                         </li>
                         <li>
-                          <Link href="/awesome/mix/vol-2">Volume 2</Link>
+                          <Link href="/awesome/mix/vol/2">Volume 2</Link>
                         </li>
                       </ul>
                     </li>
