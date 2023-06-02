@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Awesome Mix Vol. 2',
 };
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <div className="border-b border-gray-200 pb-5 sm:flex sm:items-center sm:justify-between">
