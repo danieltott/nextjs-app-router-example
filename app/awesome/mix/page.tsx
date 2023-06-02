@@ -1,5 +1,3 @@
-import RandomImage from '@/app/random-image';
-
 export default function Home() {
   return (
     <>
