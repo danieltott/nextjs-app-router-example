@@ -27,7 +27,9 @@ export default function RootLayout({
                 Next.js App Router Example
               </h1>
             </div>
-            <div className="mt-4 flex md:ml-4 md:mt-0">Hello!</div>
+            <div className="mt-4 flex md:ml-4 md:mt-0">
+              {new Date().toLocaleTimeString()}
+            </div>
           </header>
           {children}
           <footer className="mt-8 border-t border-t-sky-500 pt-8">
