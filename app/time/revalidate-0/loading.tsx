@@ -2,7 +2,10 @@ export default function Loading() {
   return (
     <div className="prose max-w-none">
       <h1>
-        The current time is: (<code>revalidate: 0</code>)
+        The current time is:{' '}
+        <span className="text-base">
+          (<code>revalidate: 0</code>)
+        </span>
       </h1>
       <div className="flex gap-2 items-center">
         <svg

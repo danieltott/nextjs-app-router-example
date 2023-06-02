@@ -12,7 +12,10 @@ export default async function Page() {
   return (
     <div className="prose max-w-none">
       <h1>
-        The current time is: (<code>cache: no-store</code>)
+        The current time is:{' '}
+        <span className="text-base">
+          (<code>cache: no-store</code>)
+        </span>
       </h1>
       <p>{time}</p>
     </div>
