@@ -58,6 +58,9 @@ export default function RootLayout({
                         <li>
                           <Link href="/awesome/mix/vol/2">Volume 2</Link>
                         </li>
+                        <li>
+                          <Link href="/awesome/mix/vol/2">Volume 2345</Link>
+                        </li>
                       </ul>
                     </li>
                   </ul>
