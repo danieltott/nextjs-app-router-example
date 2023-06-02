@@ -41,17 +41,6 @@ export default function RootLayout({
                 </li>
                 <li>
                   <Link href="/danger-zone">Error</Link>
-
-                  <ul>
-                    <li>
-                      <Link href="/danger-zone/server-component-error">
-                        Server Component Error
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/danger-zone/sfsfsdfsdf">Not Found</Link>
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <Link href="/awesome">Awesome</Link>

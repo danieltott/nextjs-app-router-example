@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ErrorButton from './error-button';
 
 export const metadata = {
@@ -14,6 +15,19 @@ export default function Home() {
         <div className="mt-3 flex sm:ml-4 sm:mt-0">
           <ErrorButton />
         </div>
+      </div>
+      <div className="prose mt-8">
+        <h2>Other Errors:</h2>
+        <ul>
+          <li>
+            <Link href="/danger-zone/server-component-error">
+              Server Component Error
+            </Link>
+          </li>
+          <li>
+            <Link href="/danger-zone/sfsfsdfsdf">Not Found</Link>
+          </li>
+        </ul>
       </div>
     </>
   );
