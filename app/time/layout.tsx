@@ -5,7 +5,8 @@ const navigation = [
   { name: 'Static', href: '/time' },
   { name: 'Dynamic', href: '/time/dynamic' },
   { name: 'No-Store', href: '/time/no-store' },
-  { name: 'Revalidate', href: '/time/revalidate' },
+  { name: 'Revalidate:0', href: '/time/revalidate-0' },
+  { name: 'Revalidate:5', href: '/time/revalidate-5' },
 ];
 
 export default async function Layout({

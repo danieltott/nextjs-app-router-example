@@ -7,7 +7,7 @@ export const metadata = {
 export const dynamic = 'force-dynamic';
 
 export default async function Page() {
-  const time = await getTime();
+  const time = await getTime('America/Glace_Bay');
 
   return (
     <div className="prose max-w-none">
