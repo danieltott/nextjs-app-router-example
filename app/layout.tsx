@@ -46,6 +46,10 @@ export default function RootLayout({
                       <Link href="/awesome/sauce">Sauce</Link>
                     </li>
                     <li>
+                      <Link href="/awesome/totally">Totally</Link>
+                    </li>
+
+                    <li>
                       <Link href="/awesome/mix">Mix</Link>
                       <ul>
                         <li>
