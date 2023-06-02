@@ -42,6 +42,9 @@ export default function RootLayout({
                   <Link href="/">Home</Link>
                 </li>
                 <li>
+                  <Link href="/interactive">Interactive</Link>
+                </li>
+                <li>
                   <Link href="/awesome">Awesome</Link>
                   <ul>
                     <li>
