@@ -7,6 +7,7 @@ const navigation = [
   { name: 'No-Store', href: '/time/no-store' },
   { name: 'Revalidate:0', href: '/time/revalidate-0' },
   { name: 'Revalidate:5', href: '/time/revalidate-5' },
+  { name: 'Static + Route Revalidate', href: '/time/static-revalidate-route' },
 ];
 
 export default async function Layout({
