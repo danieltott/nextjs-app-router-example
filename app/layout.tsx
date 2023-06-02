@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import './globals.css';
 import { Inter } from 'next/font/google';
+import BreadCrumbs from './breadcrumbs';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="container p-4 mx-auto">
-          <header className="md:flex md:items-center md:justify-between mb-8">
+          <header className="md:flex md:items-center md:justify-between mb-2">
             <div className="min-w-0 flex-1">
               <h1 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
                 Next.js App Router Example
@@ -31,6 +32,7 @@ export default function RootLayout({
               {new Date().toLocaleTimeString()}
             </div>
           </header>
+          <BreadCrumbs />
           {children}
           <footer className="mt-8 border-t border-t-sky-500 pt-8">
             <nav className="prose">
@@ -38,6 +40,9 @@ export default function RootLayout({
               <ul>
                 <li>
                   <Link href="/">Home</Link>
+                </li>
+                <li>
+                  <Link href="/interactive">Interactive</Link>
                 </li>
                 <li>
                   <Link href="/star-wars/people">Star Wars</Link>
