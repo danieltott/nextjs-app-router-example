@@ -12,11 +12,11 @@ export async function getTime(
   }
 
   const res = await fetch(
-    `https://worldtimeapi.org/api/timezone/America/New_York?x=${timezone}`,
+    `https://worldtimeapi.org/api/timezone/${timezone}`,
     requestInit
   );
 
   const json: Time = await res.json();
 
-  return `${new Date(json.datetime).toLocaleTimeString()}`;
+  return `${new Date(json.datetime).toLocaleTimeString()} (${json.timezone})`;
 }
