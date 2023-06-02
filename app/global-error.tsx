@@ -1,22 +1,22 @@
+'use client';
 import Link from 'next/link';
 import './globals.css';
 import { Inter } from 'next/font/google';
-
 const inter = Inter({ subsets: ['latin'] });
+import { useEffect } from 'react';
 
-export const metadata = {
-  title: {
-    template: '%s | Next.js App Router Example',
-    default: 'Home Page',
-  },
-  description: `We're doing things!`,
-};
-
-export default function RootLayout({
-  children,
+export default function GlobalError({
+  error,
+  reset,
 }: {
-  children: React.ReactNode;
+  error: Error;
+  reset: () => void;
 }) {
+  useEffect(() => {
+    // Log the error to an error reporting service
+    console.error(error);
+  }, [error]);
+
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -24,34 +24,24 @@ export default function RootLayout({
           <header className="md:flex md:items-center md:justify-between mb-8">
             <div className="min-w-0 flex-1">
               <h1 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
-                Next.js App Router Example
+                Something went wrong!
               </h1>
             </div>
             <div className="mt-4 flex md:ml-4 md:mt-0">
               {new Date().toLocaleTimeString()}
             </div>
           </header>
-          {children}
+
+          <div className="p-8 bg-red-200 border border-red-600 text-red-700 font-semibold">
+            Error: {error.message}
+          </div>
+
           <footer className="mt-8 border-t border-t-sky-500 pt-8">
             <nav className="prose">
               <h3>Links!</h3>
               <ul>
                 <li>
                   <Link href="/">Home</Link>
-                </li>
-                <li>
-                  <Link href="/danger-zone">Error</Link>
-
-                  <ul>
-                    <li>
-                      <Link href="/danger-zone/server-component-error">
-                        Server Component Error
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/danger-zone/sfsfsdfsdf">Not Found</Link>
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <Link href="/awesome">Awesome</Link>
