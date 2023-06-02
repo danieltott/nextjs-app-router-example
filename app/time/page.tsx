@@ -1,6 +1,6 @@
 //
 
-import Link from 'next/link';
+import sleep from '@/util/sleep';
 
 async function getTime(): Promise<Time> {
   await sleep();
@@ -15,12 +15,6 @@ async function getTime(): Promise<Time> {
 export const metadata = {
   title: 'Time',
 };
-
-export function sleep(ms = 2000) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
-}
 
 export type Time = {
   abbreviation: string;
