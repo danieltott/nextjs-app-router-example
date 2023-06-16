@@ -4,7 +4,51 @@ This repo contains examples from my talk on the new Next.js App Router.
 
 The talk is broken up into sections - and each section has a corresponding Pull Request.
 
-## 1: Intro,
+## 0: Base install
+
+_(branch only, no PR)_
+
+We start with the output of `npx create-next-app@latest`, with a couple small adjustments
+
+- Update design
+- Use `pnpm`
+
+## [1: Intro, Routes and Layouts](https://github.com/danieltott/nextjs-app-router-example/pull/6)
+
+- Add some basic [routes](https://nextjs.org/docs/app/building-your-application/routing/defining-routes)
+- Add a [Root Layout](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required)
+- Add some [nested layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#nesting-layouts)
+- Add some examples of [Client Components](https://nextjs.org/docs/getting-started/react-essentials)
+
+## [2: Route Groups and Dynamic Routes](https://github.com/danieltott/nextjs-app-router-example/pull/7)
+
+- Add a [Route Group](https://nextjs.org/docs/app/building-your-application/routing/route-groups)
+- Add a [Dynamic Route](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes)
+- Add [Dynamic Metadata](https://nextjs.org/docs/app/building-your-application/optimizing/metadata#dynamic-metadata)
+
+## [3: Handling Errors](https://github.com/danieltott/nextjs-app-router-example/pull/8)
+
+- Add [error handlers](https://nextjs.org/docs/app/building-your-application/routing/error-handling)
+- Add [404 handlers](https://nextjs.org/docs/app/api-reference/file-conventions/not-found)
+
+## [4: Data Fetching](https://github.com/danieltott/nextjs-app-router-example/pull/9)
+
+- Add [Data Fetching](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching) to Route
+- Add [Data Fetching](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching) to Layout
+- Add [`loading.js` files](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming)
+
+## [5: Suspense](https://github.com/danieltott/nextjs-app-router-example/pull/10)
+
+- Add [`Suspense`](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming#streaming-with-suspense) example
+
+## [6: Rendering and Caching](https://github.com/danieltott/nextjs-app-router-example/pull/11)
+
+- Data `fetch` on [static route](https://nextjs.org/docs/app/building-your-application/rendering/static-and-dynamic-rendering#static-rendering-default)
+- Data `fetch` on [dynamic route](https://nextjs.org/docs/app/building-your-application/rendering/static-and-dynamic-rendering#dynamic-rendering)
+- `fetch` with [`cache: no-store`](https://nextjs.org/docs/app/building-your-application/data-fetching/caching)
+- `fetch` with [`revalidate: 0`](https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating)
+- `fetch` with [`revalidate: 5`](https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating)
+- `fetch` with a Static page + [`revalidate = true` Route Segment Config](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#revalidate)
 
 ---
 
