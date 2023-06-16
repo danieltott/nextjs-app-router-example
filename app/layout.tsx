@@ -42,6 +42,11 @@ export default function RootLayout({
                   <Link href="/">Home</Link>
                 </li>
                 <li>
+                  <a href="https://github.com/danieltott/nextjs-app-router-example">
+                    GitHub Repo
+                  </a>
+                </li>
+                <li>
                   <Link href="/interactive">Interactive</Link>
                 </li>
                 <li>
