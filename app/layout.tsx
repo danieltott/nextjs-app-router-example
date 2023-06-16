@@ -45,6 +45,9 @@ export default function RootLayout({
                   <Link href="/interactive">Interactive</Link>
                 </li>
                 <li>
+                  <Link href="/time">Time</Link>
+                </li>
+                <li>
                   <Link href="/star-wars/people">Star Wars</Link>
                 </li>
                 <li>
