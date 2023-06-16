@@ -18,7 +18,9 @@ See the full running app [here on Vercel](https://nextjs-app-router-example.verc
 - [React Server Components on patterns.dev](https://www.patterns.dev/posts/react-server-components)
 - [Hacker News thread by Dan Abramov](https://news.ycombinator.com/item?id=25499171)
 
-## 0: Base install
+## Talk Sections:
+
+### 0: Base install
 
 _(branch only, no PR)_
 
@@ -27,7 +29,7 @@ We start with the output of `npx create-next-app@latest`, with a couple small ad
 - Update design
 - Use `pnpm`
 
-## [1: Intro, Routes and Layouts](https://github.com/danieltott/nextjs-app-router-example/pull/6)
+### [1: Intro, Routes and Layouts](https://github.com/danieltott/nextjs-app-router-example/pull/6)
 
 [Running App on Vercel](https://nextjs-app-router-example-git-01-intro-routes-3bd35e-danieltott.vercel.app)
 
@@ -36,7 +38,7 @@ We start with the output of `npx create-next-app@latest`, with a couple small ad
 - Add some [nested layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#nesting-layouts)
 - Add some examples of [Client Components](https://nextjs.org/docs/getting-started/react-essentials)
 
-## [2: Route Groups and Dynamic Routes](https://github.com/danieltott/nextjs-app-router-example/pull/7)
+### [2: Route Groups and Dynamic Routes](https://github.com/danieltott/nextjs-app-router-example/pull/7)
 
 [Running App on Vercel](https://nextjs-app-router-example-git-02-groups-and-dynamic-danieltott.vercel.app)
 
@@ -44,14 +46,14 @@ We start with the output of `npx create-next-app@latest`, with a couple small ad
 - Add a [Dynamic Route](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes)
 - Add [Dynamic Metadata](https://nextjs.org/docs/app/building-your-application/optimizing/metadata#dynamic-metadata)
 
-## [3: Handling Errors](https://github.com/danieltott/nextjs-app-router-example/pull/8)
+### [3: Handling Errors](https://github.com/danieltott/nextjs-app-router-example/pull/8)
 
 [Running App on Vercel](https://nextjs-app-router-example-git-03-errors-danieltott.vercel.app)
 
 - Add [error handlers](https://nextjs.org/docs/app/building-your-application/routing/error-handling)
 - Add [404 handlers](https://nextjs.org/docs/app/api-reference/file-conventions/not-found)
 
-## [4: Data Fetching](https://github.com/danieltott/nextjs-app-router-example/pull/9)
+### [4: Data Fetching](https://github.com/danieltott/nextjs-app-router-example/pull/9)
 
 [Running App on Vercel](https://nextjs-app-router-example-git-04-data-fetching-danieltott.vercel.app)
 
@@ -59,13 +61,13 @@ We start with the output of `npx create-next-app@latest`, with a couple small ad
 - Add [Data Fetching](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching) to Layout
 - Add [`loading.js` files](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming)
 
-## [5: Suspense](https://github.com/danieltott/nextjs-app-router-example/pull/10)
+### [5: Suspense](https://github.com/danieltott/nextjs-app-router-example/pull/10)
 
 [Running App on Vercel](https://nextjs-app-router-example-git-05-suspense-danieltott.vercel.app)
 
 - Add [`Suspense`](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming#streaming-with-suspense) example
 
-## [6: Rendering and Caching](https://github.com/danieltott/nextjs-app-router-example/pull/11)
+### [6: Rendering and Caching](https://github.com/danieltott/nextjs-app-router-example/pull/11)
 
 [Running App on Vercel](https://nextjs-app-router-example-git-06-caching-danieltott.vercel.app)
 
@@ -75,6 +77,33 @@ We start with the output of `npx create-next-app@latest`, with a couple small ad
 - `fetch` with [`revalidate: 0`](https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating)
 - `fetch` with [`revalidate: 5`](https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating)
 - `fetch` with a Static page + [`revalidate = true` Route Segment Config](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#revalidate)
+
+## Running Locally
+
+This repo requires `node` and `pnpm`
+
+### Installing `node`:
+
+The best way to install `node` is to [download the installer](https://nodejs.org/en/) from their site. This repo requires `node` version `18.16`, which is the latest [LTS version](https://nodejs.dev/en/about/releases/).
+
+If you already have a different version of `node` installed, but don't want to update globally, you can install [a package called `nvm`](https://github.com/nvm-sh/nvm), which will allow you to easily switch `node` versions. Once you have `nvm` installed (or if you already have it installed), you can run `nvm use` in the main directory and it will install the proper version of `node`.
+
+### Installing `pnpm`:
+
+`pnpm` is a package manager that is used to install the rest of our dependencies.
+
+Read more about `pnpm` [on their docs site](https://pnpm.io/motivation).
+
+The best way to install `pnpm` for this project is by using [Corepack](https://nodejs.org/api/corepack.html), a new feature bundled with Node.
+
+Install pnpm via corepack with the following commands:
+
+```sh
+corepack enable
+corepack prepare
+```
+
+Then follow the normal nextjs instructions:
 
 ---
 
@@ -87,10 +116,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
 ```
 
