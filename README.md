@@ -4,6 +4,8 @@ This repo contains examples from my talk on the new Next.js App Router.
 
 The talk is broken up into sections - and each section has a corresponding Pull Request.
 
+The `main` branch (what you're looking at right now) has the full thing, each Pull Request is based off of the other, starting with the Base Install.
+
 ## 0: Base install
 
 _(branch only, no PR)_
