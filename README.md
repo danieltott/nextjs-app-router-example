@@ -8,6 +8,14 @@ The `main` branch (what you're looking at right now) has the full thing, each Pu
 
 See the full running app [here on Vercel](https://nextjs-app-router-example.vercel.app/)
 
+## Resources
+
+- [Next.js Docs](https://nextjs.org/docs)
+- [App Router Playground](https://app-router.vercel.app/)
+- [Next.js on React Server Components](https://nextjs.org/docs/getting-started/react-essentials#server-components)
+- [React Server Components on patterns.dev](https://www.patterns.dev/posts/react-server-components)
+- [Hacker News thread by Dan Abramov](https://news.ycombinator.com/item?id=25499171)
+
 ## 0: Base install
 
 _(branch only, no PR)_
