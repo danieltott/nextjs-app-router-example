@@ -1,3 +1,15 @@
+# Next.js App Router Example
+
+This repo contains examples from my talk on the new Next.js App Router.
+
+The talk is broken up into sections - and each section has a corresponding Pull Request.
+
+## 1: Intro,
+
+---
+
+# Next.js Auto-Generated README:
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
