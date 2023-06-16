@@ -2,6 +2,10 @@
   "name": "nextjs-app-router-example",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.16"
+  },
+  "packageManager": "pnpm@8.6.2",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
