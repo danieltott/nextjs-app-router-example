@@ -6,6 +6,8 @@ The talk is broken up into sections - and each section has a corresponding Pull 
 
 The `main` branch (what you're looking at right now) has the full thing, each Pull Request is based off of the other, starting with the Base Install.
 
+See the full running app [here on Vercel](https://nextjs-app-router-example.vercel.app/)
+
 ## 0: Base install
 
 _(branch only, no PR)_
@@ -17,6 +19,8 @@ We start with the output of `npx create-next-app@latest`, with a couple small ad
 
 ## [1: Intro, Routes and Layouts](https://github.com/danieltott/nextjs-app-router-example/pull/6)
 
+[Running App on Vercel](https://nextjs-app-router-example-git-01-intro-routes-3bd35e-danieltott.vercel.app)
+
 - Add some basic [routes](https://nextjs.org/docs/app/building-your-application/routing/defining-routes)
 - Add a [Root Layout](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required)
 - Add some [nested layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#nesting-layouts)
@@ -24,16 +28,22 @@ We start with the output of `npx create-next-app@latest`, with a couple small ad
 
 ## [2: Route Groups and Dynamic Routes](https://github.com/danieltott/nextjs-app-router-example/pull/7)
 
+[Running App on Vercel](https://nextjs-app-router-example-git-02-groups-and-dynamic-danieltott.vercel.app)
+
 - Add a [Route Group](https://nextjs.org/docs/app/building-your-application/routing/route-groups)
 - Add a [Dynamic Route](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes)
 - Add [Dynamic Metadata](https://nextjs.org/docs/app/building-your-application/optimizing/metadata#dynamic-metadata)
 
 ## [3: Handling Errors](https://github.com/danieltott/nextjs-app-router-example/pull/8)
 
+[Running App on Vercel](https://nextjs-app-router-example-git-03-errors-danieltott.vercel.app)
+
 - Add [error handlers](https://nextjs.org/docs/app/building-your-application/routing/error-handling)
 - Add [404 handlers](https://nextjs.org/docs/app/api-reference/file-conventions/not-found)
 
 ## [4: Data Fetching](https://github.com/danieltott/nextjs-app-router-example/pull/9)
+
+[Running App on Vercel](https://nextjs-app-router-example-git-04-data-fetching-danieltott.vercel.app)
 
 - Add [Data Fetching](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching) to Route
 - Add [Data Fetching](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching) to Layout
@@ -41,9 +51,13 @@ We start with the output of `npx create-next-app@latest`, with a couple small ad
 
 ## [5: Suspense](https://github.com/danieltott/nextjs-app-router-example/pull/10)
 
+[Running App on Vercel](https://nextjs-app-router-example-git-05-suspense-danieltott.vercel.app)
+
 - Add [`Suspense`](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming#streaming-with-suspense) example
 
 ## [6: Rendering and Caching](https://github.com/danieltott/nextjs-app-router-example/pull/11)
+
+[Running App on Vercel](https://nextjs-app-router-example-git-06-caching-danieltott.vercel.app)
 
 - Data `fetch` on [static route](https://nextjs.org/docs/app/building-your-application/rendering/static-and-dynamic-rendering#static-rendering-default)
 - Data `fetch` on [dynamic route](https://nextjs.org/docs/app/building-your-application/rendering/static-and-dynamic-rendering#dynamic-rendering)
