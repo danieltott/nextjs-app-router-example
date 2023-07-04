@@ -3,6 +3,7 @@
 This repo contains examples from my talk on the new Next.js App Router.
 
 - [Video for Part 1](https://www.youtube.com/watch?v=faE-G7_bQqU)
+- [Video for Part 2](https://www.youtube.com/watch?v=ywaMkjvTWiY)
 
 The talk is broken up into sections - and each section has a corresponding Pull Request.
 
